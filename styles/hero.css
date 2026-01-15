@@ -23,6 +23,22 @@ body{
   color: #3A3A3A;
 }
 
+.text-secondary{
+  font-size: 1.125rem ;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #3A3A3A;
+}
+
+.btn{
+    padding: 10px 24px;
+    color: white;
+    background-color: #E02C6D;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
 
 /* Hero Section */
   
@@ -31,6 +47,7 @@ body{
   max-width: 1200px;
   margin: 0 auto;
   margin-top: 2.4rem ;
+  margin-bottom: 100px;
 }
 
 /* Navigation Bar Section */
@@ -71,10 +88,59 @@ body{
 }
 
 
+/* Banner Section */
+#banner{
+    background: url("../images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    background-position: right ;
+    background-size: 445px auto;
+    margin-top: 5rem;
+    align-items: center;
+    justify-content: space-between;
+}
 
+#banner .banner-content{
+  max-width: 582px;
+}
+
+#banner .banner-content h1{
+    font-size: 3.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+#banner .banner-content button .arrow{
+  margin-left: 4px;
+}
+
+#banner .banner-image img{
+  width: 100%;
+}
+
+
+/* Company Logo Section */
+#company-logo{
+    margin-top: 69px;
+    margin-left: 6.5rem;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+    border-top: 1px solid ;
+    border-bottom: 1px solid ;
+    border-image: linear-gradient(
+        to right,
+        transparent,
+        #C0CCDA,
+        transparent
+    ) 1;
+    padding: 30px 0;
+}
 
 
 @media screen and (max-width: 576px) {
+    #hero{
+      width: 90%;
+    }
 
     #menu {
         flex-direction: column;
@@ -100,6 +166,38 @@ body{
         vertical-align: middle;
     }
 
+    /* Banner */
+    #banner {
+        background-position: top;
+        flex-direction: column-reverse;
+        background-size: 100%;
+        gap: 4rem;
+    }
+
+    #banner .banner-content {
+        text-align: center;
+    }
+
+    #banner .banner-content h1 {
+        font-size: 2rem;
+    }
+
+    .text-secondary {
+      font-size: .8rem;
+    }
+
+    /* Company-Logo */
+    #company-logo{
+        grid-template-columns: repeat(4, 1fr);
+        margin-left: 0;
+        gap: 1rem;
+    }
+
+    #company-logo img{
+        width: 100%;
+        margin: 0 auto;
+    }
+
 }
 
 
@@ -108,5 +206,21 @@ body{
         flex-direction: column;
         gap: 1rem;
         align-items: center;
+    }
+
+    /* Banner */
+    #banner {
+        background-position: top;
+        flex-direction: column-reverse;
+        background-size: 440px;
+        gap: 4rem;
+    }
+
+    /* Company-Logo */
+    #company-logo {
+        margin-left: 4.5rem;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(4, 1fr);
     }
 }
