@@ -46,6 +46,7 @@
 #product .product-card-container .product-card p{
   font-size: 0.8rem;
   width: 80%;
+  color: #6C6C6C;
 }
 
 #product a{
@@ -57,6 +58,42 @@
   margin-top: 20px;
 }
 
+/* Featured Products Section */
+
+#featured-product{
+  width: 77%;
+  max-width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  gap: 90px;
+  margin-bottom: 100px;
+}
+
+#featured-product img{
+  width: 100%;
+}
+
+.featured-product-content{
+  margin: auto 0;
+}
+
+#featured-product .featured-product-content .heading{
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 1.3rem;
+}
+
+#featured-product .featured-product-content .description{
+  font-weight: 600;
+  color: #6C6C6C;
+  margin-bottom: 1rem;
+  width: 90%;
+  line-height: 28px;
+}
+
+.featured-product-content button{
+  border-radius: 5px;
+}
 
 
 /* Small Device */
@@ -78,6 +115,26 @@
     margin: 0 auto;
   }
 
+   /*featured-product  */
+
+  #featured-product {
+    flex-direction: column-reverse;
+    gap: 50px;
+    width: 90%;
+  }
+  
+  .featured-product-content {
+    text-align: center;
+  }
+
+  #featured-product .featured-product-content .heading{
+    font-size: 1.8rem;
+  }
+  
+  #featured-product .featured-product-content .description {
+    margin: 1rem auto;
+  }
+
 }
 
 
@@ -97,5 +154,26 @@
 
   #product .product-card-container .product-card{
     margin: 0 auto;
+  }
+
+  
+   /*featured-product  */
+
+  #featured-product {
+    flex-direction: column-reverse;
+    gap: 50px;
+    width: 77%;
+  }
+  
+  .featured-product-content {
+    text-align: center;
+  }
+
+  #featured-product .featured-product-content .heading{
+    font-size: 1.8rem;
+  }
+
+  #featured-product .featured-product-content .description {
+    margin: 1rem auto;
   }
 }
